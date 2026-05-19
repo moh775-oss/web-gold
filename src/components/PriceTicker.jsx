@@ -34,7 +34,7 @@ const PriceTicker = () => {
   }, [refreshPrices]);
 
   if (loading || !prices) {
-    return <div className="price-ticker-wrapper" style={{ textAlign: 'center', padding: '1rem' }}> جاري التحميل...</div>;
+    return <div className="price-ticker-wrapper" style={{ textAlign: 'center',  color: 'white', padding: '1rem' }}> جاري التحميل...</div>;
   }
 
   // عنصر الأونصة - سعر واحد يتغير بين دولار وريال
