@@ -1,11 +1,14 @@
 import React from 'react'
-
+import heroImg from '../assets/images/1777378521701.png';
 const Hero = () => {
   const scrollToNext = () => window.scrollTo({ top: window.innerHeight, behavior: 'smooth' })
 
   return (
     <section className="hero" id="home">
-      <div className="hero-bg" style={{ backgroundImage: "url('/src/assets/images/1777378521701.png')" }}></div>
+      <div
+  className="hero-bg"
+  style={{ backgroundImage: `url(${heroImg})` }}
+></div>
       <div className="hero-overlay"></div>
       <div className="hero-content">
         <h1 className="hero-title">ركن <span>المعادن النادرة</span></h1>

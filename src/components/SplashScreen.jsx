@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-
+import iconImg from '../assets/images/logonavBar.png'
 
 const SplashScreen = () => {
   useEffect(() => {
@@ -11,7 +11,7 @@ const SplashScreen = () => {
     <div className="splash-screen" id="splashScreen">
       <div className="splash-container">
         <div className="splash-logo">
-          <img src="/src/assets/images/logonavBar.png" alt="ركن المعادن النادرة" />
+          <img src={iconImg} alt="ركن المعادن النادرة" />
         </div>
         <div className="splash-icon">
           <i className="fas fa-gem"></i>

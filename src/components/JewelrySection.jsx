@@ -1,20 +1,121 @@
 import React, { useState } from 'react'
 
+// الصور
+import ring6 from '../assets/images/ring6.jpg'
+import necklace from '../assets/images/necklace.jpg'
+import chains from '../assets/images/chains.jpg'
+import walls from '../assets/images/walls.jpg'
+import set from '../assets/images/set.jpg'
+import ring2 from '../assets/images/ring2.jpg'
+import walls2 from '../assets/images/walls2.jpg'
+import necklace2 from '../assets/images/necklace2.jpg'
+import set2 from '../assets/images/set2.jpg'
+
 const products = [
-  { id: 1, category: 'rings', title: 'خاتم ذهب عيار 21', weight: '8.5 جرام', purity: 'عيار 21', type: 'ذهب أصفر', image: '/src/assets/images/ring6.jpg', badge: 'الأكثر مبيعاً', desc: 'تصميم فاخر، نقشات دقيقة، حجر كريم طبيعي' },
-  { id: 2, category: 'necklaces', title: 'قلادة ذهبية مرصعة', weight: '12 جرام', purity: 'عيار 18', type: 'مرصع بألماس', image: '/src/assets/images/necklace.jpg', badge: 'جديد', desc: 'تصميم أنيق، سلسلة رفيعة مع قلادة مميزة بالألماس' },
-  { id: 3, category: 'necklaces', title: 'سلسلة ذهبية دبل', weight: '28 جرام', purity: 'عيار 22', type: 'ذهب عيار 22', image: '/src/assets/images/chains.jpg', badge: '', desc: 'سلسلة ثقيلة الوزن، تلائم المناسبات الخاصة' },
-  { id: 4, category: 'bracelets', title: 'سوار ألماسي فاخر', weight: '15 جرام', purity: 'عيار 21', type: 'ألماس طبيعي', image: '/src/assets/images/walls.jpg', badge: 'الأكثر طلباً', desc: 'مرصع بألماس طبيعي، تصميم عصري يلفت الأنظار' },
-  { id: 5, category: 'sets', title: 'طقم كامل فاخر', weight: '68 جرام', purity: 'عيار 21', type: 'هدية مثالية', image: '/src/assets/images/set.jpg', badge: 'حصري', desc: 'طقم متكامل: سلسلة + خاتم + سوار + أقراط' },
-  { id: 6, category: 'rings', title: 'خاتم ذهب عيار 22', weight: '12 جرام', purity: 'عيار 22', type: 'ذهب أصفر', image: '/src/assets/images/ring2.jpg', badge: 'تصميم عصري', desc: 'تصميم عصري، لمسة مطفي، نقشات شرقية أصيلة' },
-  { id: 7, category: 'bracelets', title: 'اسوارة ذهبية ناعمة', weight: '10 جرام', purity: 'عيار 18', type: 'هدية مثالية', image: '/src/assets/images/walls2.jpg', badge: '', desc: 'تصميم أنيق يناسب جميع الأوقات، هدية مميزة' },
-  { id: 8, category: 'necklaces', title: 'قلادة ذهبية', weight: '14 جرام', purity: 'عيار 21', type: 'حجر كريم', image: '/src/assets/images/necklace2.jpg', badge: 'مطلوب بكثرة', desc: 'قلادة مميزة بحجر كريم طبيعي، لمسة فخامة لا تقاوم' },
-  { id: 9, category: 'sets', title: 'طقم ذهب فاخر', weight: '45 جرام', purity: 'عيار 21', type: 'تصميم حصري', image: '/src/assets/images/set2.jpg', badge: 'إصدار محدود', desc: 'طقم متكامل بتصميم استثنائي، مناسب لأهم المناسبات' }
+  {
+    id: 1,
+    category: 'rings',
+    title: 'خاتم ذهب عيار 21',
+    weight: '8.5 جرام',
+    purity: 'عيار 21',
+    type: 'ذهب أصفر',
+    image: ring6,
+    badge: 'الأكثر مبيعاً',
+    desc: 'تصميم فاخر، نقشات دقيقة، حجر كريم طبيعي'
+  },
+  {
+    id: 2,
+    category: 'necklaces',
+    title: 'قلادة ذهبية مرصعة',
+    weight: '12 جرام',
+    purity: 'عيار 18',
+    type: 'مرصع بألماس',
+    image: necklace,
+    badge: 'جديد',
+    desc: 'تصميم أنيق، سلسلة رفيعة مع قلادة مميزة بالألماس'
+  },
+  {
+    id: 3,
+    category: 'necklaces',
+    title: 'سلسلة ذهبية دبل',
+    weight: '28 جرام',
+    purity: 'عيار 22',
+    type: 'ذهب عيار 22',
+    image: chains,
+    badge: '',
+    desc: 'سلسلة ثقيلة الوزن، تلائم المناسبات الخاصة'
+  },
+  {
+    id: 4,
+    category: 'bracelets',
+    title: 'سوار ألماسي فاخر',
+    weight: '15 جرام',
+    purity: 'عيار 21',
+    type: 'ألماس طبيعي',
+    image: walls,
+    badge: 'الأكثر طلباً',
+    desc: 'مرصع بألماس طبيعي، تصميم عصري يلفت الأنظار'
+  },
+  {
+    id: 5,
+    category: 'sets',
+    title: 'طقم كامل فاخر',
+    weight: '68 جرام',
+    purity: 'عيار 21',
+    type: 'هدية مثالية',
+    image: set,
+    badge: 'حصري',
+    desc: 'طقم متكامل: سلسلة + خاتم + سوار + أقراط'
+  },
+  {
+    id: 6,
+    category: 'rings',
+    title: 'خاتم ذهب عيار 22',
+    weight: '12 جرام',
+    purity: 'عيار 22',
+    type: 'ذهب أصفر',
+    image: ring2,
+    badge: 'تصميم عصري',
+    desc: 'تصميم عصري، لمسة مطفي، نقشات شرقية أصيلة'
+  },
+  {
+    id: 7,
+    category: 'bracelets',
+    title: 'اسوارة ذهبية ناعمة',
+    weight: '10 جرام',
+    purity: 'عيار 18',
+    type: 'هدية مثالية',
+    image: walls2,
+    badge: '',
+    desc: 'تصميم أنيق يناسب جميع الأوقات، هدية مميزة'
+  },
+  {
+    id: 8,
+    category: 'necklaces',
+    title: 'قلادة ذهبية',
+    weight: '14 جرام',
+    purity: 'عيار 21',
+    type: 'حجر كريم',
+    image: necklace2,
+    badge: 'مطلوب بكثرة',
+    desc: 'قلادة مميزة بحجر كريم طبيعي، لمسة فخامة لا تقاوم'
+  },
+  {
+    id: 9,
+    category: 'sets',
+    title: 'طقم ذهب فاخر',
+    weight: '45 جرام',
+    purity: 'عيار 21',
+    type: 'تصميم حصري',
+    image: set2,
+    badge: 'إصدار محدود',
+    desc: 'طقم متكامل بتصميم استثنائي، مناسب لأهم المناسبات'
+  }
 ]
 
 const JewelrySection = () => {
   const [activeFilter, setActiveFilter] = useState('all')
-  
+
   const filters = [
     { value: 'all', label: 'الكل' },
     { value: 'rings', label: 'خواتم' },

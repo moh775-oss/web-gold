@@ -8,13 +8,13 @@ const ContactSection = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     if (!formData.name || !formData.phone || !formData.message) {
-      alert('❌ الرجاء تعبئة جميع الحقول')
+      alert(' الرجاء تعبئة جميع الحقول')
       return
     }
     const subjectSelect = document.getElementById('contactSubject')
     const subject = subjectSelect?.options[subjectSelect.selectedIndex]?.text || 'استفسار عام'
-    const msg = `السلام عليكم،\n📋 استفسار جديد\n👤 الاسم: ${formData.name}\n📞 الجوال: ${formData.phone}\n🏷️ نوع الاستفسار: ${subject}\n💬 الرسالة: ${formData.message}`
-    window.open(`https://wa.me/966553135287?text=${encodeURIComponent(msg)}`, '_blank')
+    const msg = `السلام عليكم،\n استفسار جديد\n الاسم: ${formData.name}\n الجوال: ${formData.phone}\n🏷️ نوع الاستفسار: ${subject}\n💬 الرسالة: ${formData.message}`
+    window.open(`https://wa.me/966567401364?text=${encodeURIComponent(msg)}`, '_blank')
     alert('سيتم تحويلك إلى واتساب')
     setFormData({ name: '', phone: '', subject: '', message: '' })
   }

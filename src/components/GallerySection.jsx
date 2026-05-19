@@ -1,18 +1,104 @@
 import React, { useState } from 'react'
 
+// الصور
+import ring7 from '../assets/images/ring7.jpg'
+import oneK from '../assets/images/1k.jpg'
+import set4 from '../assets/images/set4.jpg'
+import shopInside from '../assets/images/1777282595997.png'
+import hundredG from '../assets/images/100g.jpg'
+import bracelet from '../assets/images/bracelet.jpg'
+import necklace3 from '../assets/images/necklace3.jpg'
+import shopFront from '../assets/images/1777281920894.png'
+import pounds from '../assets/images/pounds.jpg'
+import walls3 from '../assets/images/walls3.jpg'
+import alloys from '../assets/images/alloys.jpg'
+import earrings from '../assets/images/earrings.jpg'
+
 const galleryImages = [
-  { id: 1, category: 'jewelry', title: 'خاتم ذهب عيار 21', desc: 'تصميم سعودي أصيل', image: '/src/assets/images/ring7.jpg' },
-  { id: 2, category: 'bullion', title: 'سبيكة ذهب 1 كيلو', desc: 'نقاء 99.99% - معتمدة', image: '/src/assets/images/1k.jpg' },
-  { id: 3, category: 'jewelry', title: 'طقم أفراح ملكي', desc: 'ذهب عيار 21 - 68 جرام', image: '/src/assets/images/set4.jpg' },
-  { id: 4, category: 'shop', title: 'داخل المحل', desc: 'أجواء فاخرة لعملائنا', image: '/src/assets/images/1777282595997.png' },
-  { id: 5, category: 'bullion', title: 'سبيكة 100 جرام', desc: 'الاستثمار الأمثل', image: '/src/assets/images/100g.jpg' },
-  { id: 6, category: 'jewelry', title: 'سوار ألماسي', desc: 'مرصع بألماس طبيعي', image: '/src/assets/images/bracelet.jpg' },
-  { id: 7, category: 'jewelry', title: 'قلادة ذهبية', desc: 'تصميم فرنسي فاخر', image: '/src/assets/images/necklace3.jpg' },
-  { id: 8, category: 'shop', title: 'واجهة المحل', desc: 'ركن المعادن النادرة', image: '/src/assets/images/1777281920894.png' },
-  { id: 9, category: 'bullion', title: 'جنيهات ذهب سعودي', desc: 'متوفرة بالجملة', image: '/src/assets/images/pounds.jpg' },
-  { id: 10, category: 'jewelry', title: 'أساور ذهبية فاخرة', desc: 'عيار 21 - تصميم أنيق', image: '/src/assets/images/walls3.jpg' },
-  { id: 11, category: 'bullion', title: 'سبائك متنوعة', desc: '1 جرام - 5 جرام - 10 جرام', image: '/src/assets/images/alloys.jpg' },
-  { id: 12, category: 'jewelry', title: 'أقراط ذهبية', desc: 'تصاميم راقية - عيار 21', image: '/src/assets/images/earrings.jpg' }
+  {
+    id: 1,
+    category: 'jewelry',
+    title: 'خاتم ذهب عيار 21',
+    desc: 'تصميم سعودي أصيل',
+    image: ring7
+  },
+  {
+    id: 2,
+    category: 'bullion',
+    title: 'سبيكة ذهب 1 كيلو',
+    desc: 'نقاء 99.99% - معتمدة',
+    image: oneK
+  },
+  {
+    id: 3,
+    category: 'jewelry',
+    title: 'طقم أفراح ملكي',
+    desc: 'ذهب عيار 21 - 68 جرام',
+    image: set4
+  },
+  {
+    id: 4,
+    category: 'shop',
+    title: 'داخل المحل',
+    desc: 'أجواء فاخرة لعملائنا',
+    image: shopInside
+  },
+  {
+    id: 5,
+    category: 'bullion',
+    title: 'سبيكة 100 جرام',
+    desc: 'الاستثمار الأمثل',
+    image: hundredG
+  },
+  {
+    id: 6,
+    category: 'jewelry',
+    title: 'سوار ألماسي',
+    desc: 'مرصع بألماس طبيعي',
+    image: bracelet
+  },
+  {
+    id: 7,
+    category: 'jewelry',
+    title: 'قلادة ذهبية',
+    desc: 'تصميم فرنسي فاخر',
+    image: necklace3
+  },
+  {
+    id: 8,
+    category: 'shop',
+    title: 'واجهة المحل',
+    desc: 'ركن المعادن النادرة',
+    image: shopFront
+  },
+  {
+    id: 9,
+    category: 'bullion',
+    title: 'جنيهات ذهب سعودي',
+    desc: 'متوفرة بالجملة',
+    image: pounds
+  },
+  {
+    id: 10,
+    category: 'jewelry',
+    title: 'أساور ذهبية فاخرة',
+    desc: 'عيار 21 - تصميم أنيق',
+    image: walls3
+  },
+  {
+    id: 11,
+    category: 'bullion',
+    title: 'سبائك متنوعة',
+    desc: '1 جرام - 5 جرام - 10 جرام',
+    image: alloys
+  },
+  {
+    id: 12,
+    category: 'jewelry',
+    title: 'أقراط ذهبية',
+    desc: 'تصاميم راقية - عيار 21',
+    image: earrings
+  }
 ]
 
 const GallerySection = () => {
