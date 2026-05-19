@@ -14,7 +14,7 @@ const PriceTicker = () => {
   useEffect(() => {
     const currencyInterval = setInterval(() => {
       setShowUSD(prev => !prev); // يبدل بين دولار وريال
-    }, 30000); // كل 30 ثانية
+    }, 10000); // كل 30 ثانية
     
     return () => clearInterval(currencyInterval);
   }, []);
@@ -28,7 +28,7 @@ const PriceTicker = () => {
       await new Promise(r => setTimeout(r, 350));
       await refreshPrices();
       setTimeout(() => setUpdating(false), 150);
-    }, 30000);
+    }, 10000);
     
     return () => clearInterval(priceInterval);
   }, [refreshPrices]);
