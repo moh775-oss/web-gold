@@ -1,0 +1,19 @@
+tajpvfvrXTdTuCf7
+
+gold-system
+
+https://qxtqzefojfipwdlfqnrs.supabase.co
+
+
+sb_publishable_xGb7yLr6zATu8pe-pL-gIQ_vb0bt9LT
+
+
+postgresql://postgres:[YOUR-PASSWORD]@db.qxtqzefojfipwdlfqnrs.supabase.co:5432/postgres
+
+
+
+supabase login
+supabase init
+supabase link --project-ref qxtqzefojfipwdlfqnrs
+
+https://qxtqzefojfipwdlfqnrs.supabase.co/reviews
