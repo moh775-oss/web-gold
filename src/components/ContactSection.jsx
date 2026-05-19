@@ -37,7 +37,7 @@ const ContactSection = () => {
               <p className="info-address"><i className="fas fa-location-dot"></i> الرياض - شارع البطحاء الفرعي، حي المرقب<br />المملكة العربية السعودية</p>
               <div className="info-details">
                 <div className="info-item"><i className="fas fa-phone-alt"></i><div><strong>هاتف</strong><span>966567401364+</span></div></div>
-                <div className="info-item"><i className="fab fa-whatsapp"></i><div><strong>واتساب</strong><span>966553135287+</span></div></div>
+                <div className="info-item"><i className="fab fa-whatsapp"></i><div><strong>واتساب</strong><span>966567401364+</span></div></div>
                 <div className="info-item"><i className="far fa-clock"></i><div><strong>ساعات العمل</strong><span>السبت - الخميس: 9 ص - 11 م<br />الجمعة: 4 م - 11 م</span></div></div>
               </div>
             </div>

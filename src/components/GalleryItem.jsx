@@ -27,7 +27,7 @@ const JewelrySection = () => {
 
   const handleInquiry = (product) => {
     const msg = `السلام عليكم، أود الاستفسار عن: ${product.title}`
-    window.open(`https://wa.me/966553135287?text=${encodeURIComponent(msg)}`, '_blank')
+    window.open(`https://wa.me/966567401364?text=${encodeURIComponent(msg)}`, '_blank')
   }
 
   return (
